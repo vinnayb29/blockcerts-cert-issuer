@@ -74,6 +74,10 @@ Ensure your docker image is running and bitcoind process is started
 
     # If you created your own unsigned certificate using cert-tools (assuming you placed it under data/unsigned_certificates):
     cp <cert-issuer-home>/data/unsigned_certificates/<your-cert-guid>.json /etc/cert-issuer/data/unsigned_certificates/
+    
+    or
+    
+    docker cp <cert-issuer-home>/data/unsigned_certificates/<your-cert-guid>.json <containerId>:/etc/cert-issuer/data/unsigned_certificates/
     ```
 
 2. Make sure you have enough BTC in your issuing address.
